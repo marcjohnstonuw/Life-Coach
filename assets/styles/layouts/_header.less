@@ -1,0 +1,48 @@
+.navbar-static-top {
+	border: 0;
+}
+
+header.navbar-default {
+	height: 80px;
+	background-color: @brand-primary;
+	color: white;
+
+	.navbar-brand {
+		color: @brand-primary-contrast;
+		height: 80px;
+		padding: 30px 15px;
+
+		&:hover, &:focus {
+			color: @brand-primary-hover;
+		}
+	}
+
+	.navbar-nav>li>a,
+	.navbar-nav>.active>a,
+	.navbar-nav .dropdown.open>a {
+		height: 80px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		color: @brand-primary-contrast;
+		background-color: transparent;
+
+		&:hover, &:focus {
+			color: @brand-primary-hover;
+			background-color: @brand-primary;
+	
+			a {
+				background-color: @brand-primary;
+			}
+		}
+	}
+
+	.navbar-default .navbar-nav>.open>a, 
+	.navbar-default .navbar-nav>.open>a:focus, 
+	.navbar-default .navbar-nav>.open>a:hover,
+	.open>ul>li a,
+	.dropdown.open .dropdown-menu
+	{
+		background-color: @brand-secondary !important;
+		color: @brand-secondary-contrast;
+	}
+}

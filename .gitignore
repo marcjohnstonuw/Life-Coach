@@ -2,6 +2,9 @@
 .htaccess
 sitemap.xml
 sitemap.xml.gz
+node_modules
+node_modules_bak
+bower_components
 wp-config.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
